@@ -5,6 +5,12 @@
 Ejemplos:
 permutacion([1,2,3,4,5], 5)  Devuelve true
 permutacion([1,2,3,5],5)     Devuelve false
+
+TODO: Cómo hacerlo:
+-Crear una con parámetro secuencia y número
+-Bucle del 0 al número
+-Return false si el número actual +1, no se encuentra
+-Si salimos del bucle, devolver true
 */
 
 // -Función que reciba dos parámetros, array y entero
@@ -12,7 +18,7 @@ permutacion([1,2,3,5],5)     Devuelve false
 // -volver esa cuenta un array
 // -comparar los arrays
 
-const permutacion = (array, num) => {
+const permutation = (array, num) => {
   let count = [];
   for (let i = 1; i <= num; i++) {
     count.push(i);
@@ -20,4 +26,11 @@ const permutacion = (array, num) => {
   return count.length == array.length;
 };
 
-console.log(permutacion([1, 2, 3, 5], 5));
+function permutacion(secuencia, numero) {
+  for (let i = 0; i < numero; i++) {
+    if (secuencia.indexOf(i + 1) < 0) {
+      return false;
+    }
+  }
+  return true;
+}
