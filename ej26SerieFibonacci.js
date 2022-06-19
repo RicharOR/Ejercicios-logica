@@ -12,14 +12,3 @@ TODO: Cómo hacerlo:
 -Sumar los dos valores anteriores al número actual
 -Devolver el resultado
 */
-const fibonacci = num => {
-  let fib = [0, 1];
-  let res = 0;
-  for (let i = 2; i <= num; i++) {
-    fib.push(fib[i - 2] + fib[i - 1]);
-  }
-  res = Math.max(...fib);
-  return `Serie completa: ${fib} \nResultado de fibonacci: ${res}`;
-};
-
-console.log(fibonacci(10));
