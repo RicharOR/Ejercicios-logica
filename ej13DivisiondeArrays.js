@@ -12,19 +12,3 @@ TODO: Cómo hacerlo:
 -Crear un array
 -Recorrer el array e ir añadiendo sub-arrays
 */
-
-function divideArray(arr, num) {
-  let newArrays = [];
-
-  for (elemento of arr) {
-    let last = newArrays[newArrays.length - 1];
-    if (!last || last.length === num) {
-      newArrays.push([elemento]);
-    } else {
-      last.push(elemento);
-    }
-  }
-  return newArrays;
-}
-
-console.log(divideArray([7, 8, 9, 10, 5], 2));

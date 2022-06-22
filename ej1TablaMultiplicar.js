@@ -1,9 +1,9 @@
 /* Dado un número devolver su tabla de multiplicar completa */
 
 /* Ejemplo:
-Eejecuto esta función: tablaMultiplicar(5)
+Ejecuto esta función: tablaMultiplicar(5)
 
--Me devuelve est resultado:
+-Me devuelve este resultado:
 # Tabla del 5 #
 
 1 x 5 = 5
@@ -23,14 +23,3 @@ TODO: Como hacerlo:
 -Bucle del 1 al 10
 -Concatenar la variable string con multiplicación y su resultado
 */
-
-function tablaMultiplicar(num) {
-	let encabezado = `# Tabla del ${num} # \n`;
-	for (let i = 1; i <= 10; i++) {
-		let resultado = num * i;
-		encabezado += ` ${i} x ${num} = ${resultado} \n`;
-	}
-	return `${encabezado}`;
-}
-
-console.log(tablaMultiplicar(5));
