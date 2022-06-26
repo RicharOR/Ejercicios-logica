@@ -1,6 +1,6 @@
-/* Dado un número devovler su factorial
+/* Dado un número devolver su factorial
 
-El factorial de una número es la multiplicación de todos los números hasta llegar a el
+El factorial de un número es la multiplicación de todos los números hasta llegar a el
 
 Ejemplo: 
 factorial(4)  Devuelve 24 //ya que 1x2x3x4 = 24
@@ -11,13 +11,3 @@ TODO: Cómo hacerlo:
 -Multiplicar el número anterior con el actual
 -Devolver el resultado
 */
-
-const factorial = num => {
-  let result = 1
-  for (let i = 1; i <= num; i++) {
-    result *= i
-  }
-  return result
-}
-
-console.log(factorial(10))
