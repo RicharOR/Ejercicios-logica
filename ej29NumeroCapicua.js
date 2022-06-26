@@ -19,3 +19,14 @@ const capicua = num => {
 }
 
 console.log(capicua(2002))
+
+function capi(num) {
+  let invertido = parseInt(num.toString().split('').reverse().join('')) * Math.sign(num)
+  if (invertido === num) {
+    return `El número ${num} es capicúa.`
+  } else {
+    return `El número ${num} no es capicúa.`
+  }
+}
+
+console.log(capi(2012))
