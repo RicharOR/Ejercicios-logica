@@ -17,20 +17,3 @@ TODO: Cómo hacerlo:
 // -contar desde el 1 hasta el número
 // -volver esa cuenta un array
 // -comparar los arrays
-
-const permutation = (array, num) => {
-  let count = [];
-  for (let i = 1; i <= num; i++) {
-    count.push(i);
-  }
-  return count.length == array.length;
-};
-
-function permutacion(secuencia, numero) {
-  for (let i = 0; i < numero; i++) {
-    if (secuencia.indexOf(i + 1) < 0) {
-      return false;
-    }
-  }
-  return true;
-}
