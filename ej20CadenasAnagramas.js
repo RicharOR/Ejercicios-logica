@@ -22,16 +22,3 @@ TODO: Cómo hacerlo:
 // dividir las palabras en caracteres
 // para cada letra de una palabra revisar si hay una en la otra palabra
 // si todo es true devolver que si es anagrama si hay algún false, que no lo es
-
-function clearTxt(txt) {
-  return txt.replace(/[^\w]/, '').toLowerCase().split('').sort().join('');
-}
-
-function anagramas(txt1, txt2) {
-  if (clearTxt(txt1) == clearTxt(txt2)) {
-    return 'Son anagramas';
-  }
-  return 'No son anagramas';
-}
-
-console.log(anagramas('Riesgo', 'Sergio'));
