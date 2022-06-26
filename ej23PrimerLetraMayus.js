@@ -10,3 +10,27 @@ TODO: Cómo hacerlo:
 -Si el caracter anterior a la letra actual es un espacio ponerla en mayúscula
 -Si el caracter no es un espacio añadirlo al resultado
 */
+
+const enMayuscula = txt => {
+  let txtCapitalized = '';
+
+  for (let letter in txt) {
+    if (txt[letter - 1] === ' ' || parseInt(letter) === 0) {
+      txtCapitalized += txt[letter].toUpperCase();
+    } else {
+      txtCapitalized += txt[letter];
+    }
+  }
+
+  return txtCapitalized;
+};
+
+function capitalized(text) {
+  let wordsToCapitalize = [];
+  for (let word of text.split(' ')) {
+    wordsToCapitalize.push(word[0].toUpperCase() + word.substring(1));
+  }
+  return wordsToCapitalize.join(' ');
+}
+
+console.log(capitalized('hola soy carlos'));

@@ -28,3 +28,16 @@ TODO: Cómo hacerlo:
 -restar 8
 -concatenar fin
 */
+
+function hastaCero(num) {
+  let resultado = `--- Del ${num} al 0 --- \n`;
+
+  while (num > 0) {
+    resultado += `-n° ${num} \n`;
+    num -= 8;
+  }
+  resultado += `--- FIN --- \n`;
+  return resultado;
+}
+
+console.log(hastaCero(100));
