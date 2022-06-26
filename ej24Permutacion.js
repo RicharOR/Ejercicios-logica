@@ -12,3 +12,8 @@ TODO: Cómo hacerlo:
 -Return false si el número actual +1, no se encuentra
 -Si salimos del bucle, devolver true
 */
+
+// -Función que reciba dos parámetros, array y entero
+// -contar desde el 1 hasta el número
+// -volver esa cuenta un array
+// -comparar los arrays

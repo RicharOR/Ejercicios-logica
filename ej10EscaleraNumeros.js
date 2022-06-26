@@ -13,4 +13,6 @@ TODO: Cómo hacerlo:
 -Recorrer el número de niveles de la escalera
 -En cada iteraciópn pintar los escalones de ese nivel
 -Haciendo un bucle desde 1 hasta el nivel en el que estamos
+-Mientras que i < Number pintar en pantalla [-] \n 
+
 */

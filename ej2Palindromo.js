@@ -5,9 +5,9 @@ por ejemplo: ana, bobo, otto, allivesevilla
 *No tener en cuenta espacios o carácteres especiales.
 
 Ejemplo:
-ejecula la función palíndromo() y te retorna trus si es palíndromo o false si no lo es
-palindromo("otto");  Devolvería true
-palíndromo("victorr");  Devolvería false
+ejecula la función palíndromo() y te retorna true si es palíndromo o false si no lo es
+palindromo("otto"); //*Devolvería true
+palíndromo("victorr"); //!Devolvería false
 
 TODO: Como hacerlo
 -Funcion con parámetro "texto"

@@ -3,9 +3,7 @@
 Dividirlo en arrays de X elementos.
 
 Ejemplo:
-divideArray([7,8,9,10,5], 2);
-
-Devuelve: [[7,8],[9,10],[5]];
+divideArray([7,8,9,10,5], 2);     Devuelve: [[7,8],[9,10],[5]];
 
 TODO: Cómo hacerlo:
 -Crear una función que reciba los dos parámetros

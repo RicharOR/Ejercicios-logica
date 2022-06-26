@@ -6,12 +6,4 @@ Ejemplos:
 
 capicua(2002)  Devuelve true
 capicua(2014)  Devuelve false
-
-TODO: Cómo hacerlo:
--Crear una función con parámetro número
--Convertir a String
--Convertir número en array de números
--Darle la vuelva
--Unirlo y convertirlo a entero
--Comparar si los valores son iguales
 */

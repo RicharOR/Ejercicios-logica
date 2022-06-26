@@ -7,6 +7,6 @@ TODO: Como hacerlo:
 -Función que reciba los dos números
 -Bucle del "número1" al "número2"
 -Condición, si el resto es distinto a cero, es impar
--Aumentar en uno el contado
+-Aumentar en uno el contador
 -Devolver contador
 */

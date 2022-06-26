@@ -17,3 +17,8 @@ TODO: Cómo hacerlo:
 -Unirlo
 -Funcion para comparar Las dos palabras
 */
+
+// Función que reciba dos parámetros
+// dividir las palabras en caracteres
+// para cada letra de una palabra revisar si hay una en la otra palabra
+// si todo es true devolver que si es anagrama si hay algún false, que no lo es

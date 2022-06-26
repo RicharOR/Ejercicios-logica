@@ -1,6 +1,6 @@
-/* Dado un número devovler su factorial
+/* Dado un número devolver su factorial
 
-El factorial de una número es la multiplicación de todos los números hasta llegar a el
+El factorial de un número es la multiplicación de todos los números hasta llegar a el
 
 Ejemplo: 
 factorial(4)  Devuelve 24 //ya que 1x2x3x4 = 24
