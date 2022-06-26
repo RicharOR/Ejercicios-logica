@@ -12,27 +12,3 @@ TODO: Cómo hacerlo:
 // iterar desde el 1 al número
 // revisar que el % sea 0 para saber que es divisor
 // devolver los números divisores
-
-const showDivisores = num => {
-  let divisores = '';
-  for (let i = 1; i <= num; i++) {
-    if (num % i === 0) {
-      divisores += ` ${i}`;
-    }
-  }
-  return divisores;
-};
-// ----- ----- ----- -----
-function divisor(numero, posible_divisor) {
-  if (numero % posible_divisor === 0) {
-    return posible_divisor;
-  }
-  return 0;
-}
-
-function mostrarDivisores(number) {
-  for (let i = 1; i <= number; i++) {
-    let esDivisor = divisor(numero, i);
-    if (esDivisor) console.log(esDivisor);
-  }
-}
