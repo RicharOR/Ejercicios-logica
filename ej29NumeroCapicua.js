@@ -7,6 +7,12 @@ Ejemplos:
 capicua(2002)  Devuelve true
 capicua(2014)  Devuelve false
 
+TODO: Cómo hacerlo:
+-Crear una función con parámetro número
+-Convertir a string
+-Convertir numero en array de números
+-Darle la vuelta
+-Unirlo y convertirlo a entero
 */
 const capicua = num => {
   const toText = num.toString()
