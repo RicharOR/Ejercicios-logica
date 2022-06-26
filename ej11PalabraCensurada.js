@@ -13,16 +13,3 @@ TODO: Cómo hacerlo:
 -Reemplazar la búsqueda por [-CENSURADO-] en el texto
 
 */
-
-function cesurado(texto=false, busqueda=false){
-    const censurado = `[-CENSURADO-]`;
-    if(!texto && !busqueda) resultado = `No puedes leer el texto ni la búsqueda`;
-    if (!texto && busqueda) resultado = `No se encuentra texto para realizar la búsqueda`;
-    if (!busqueda && texto) resultado = `No hay un valor para realizar la búsqueda`;
-    if (texto && busqueda) {
-        resultado = texto.replace(new RegExp(busqueda,"gi"), ("[-CENSURADO-]"));
-    }
-
-    return censurado;
-
-}
