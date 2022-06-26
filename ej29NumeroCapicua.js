@@ -6,21 +6,4 @@ Ejemplos:
 
 capicua(2002)  Devuelve true
 capicua(2014)  Devuelve false
-
 */
-/* let capicua = 2002
-let toText = capicua.toString()
-let reversed = toText.split('').reverse().join('')
-let compare = reversed === toText */
-
-const capicua = num => {
-  const toText = num.toString()
-  const reversed = toText.split('').reverse().join('')
-  if (toText === reversed) {
-    return `El número ${num} es capicúa.`
-  } else {
-    return `El número ${num} no es capicúa.`
-  }
-}
-
-console.log(capicua(2002))
