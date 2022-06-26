@@ -14,3 +14,42 @@ TODO: Cómo hacerlo:
 -Aumentar contadores
 -Convertir a mayus o minus y devolver el resultado
 */
+
+function mayusMinus(texto) {
+  let mayusculas = 0;
+  let minusculas = 0;
+  let resultado = '';
+
+  for (let letra of texto) {
+    if (/[A-Z]/.test(letra)) {
+      mayusculas++;
+    } else {
+      minusculas++;
+    }
+  }
+  if (mayusculas > minusculas) {
+    resultado = texto.toUpperCase();
+  } else {
+    resultado = texto.toLowerCase();
+  }
+  return resultado;
+}
+//-Crear una función que reciba un texto como parámetro
+//-Contar el tamaño del string
+//-Contar la cantidad de mayúsculas
+// -Si es mayor al la mitad de la longitud del estring colocarlo en mayúscula de lo contrario en minúscula
+
+const mayusOrMinus = txt => {
+  const txtUpperCase = txt.toUpperCase();
+  let matches = 0;
+  for (let i = 0; i < txt.length; i++) {
+    if (txtUpperCase[i] === txt[i]) {
+      matches++;
+    }
+  }
+  if (matches > txt.length / 2) {
+    return txtUpperCase;
+  } else {
+    return txt.toLowerCase();
+  }
+};

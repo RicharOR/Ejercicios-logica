@@ -11,3 +11,39 @@ TODO: Cómo hacerlo:
 -Crear un array de objetos
 -Crear una función para recorrer y mostrar
 */
+
+const movies = moviesList => {
+  for (const movie of moviesList) {
+    let displayMovies = `${movie.title} de ${movie.director}`;
+    if (movie.vista) {
+      console.log(`Ya has visto ${displayMovies}`);
+    } else {
+      console.log(`Aún no has visto ${displayMovies}`);
+    }
+  }
+};
+
+const moviesCollection = [
+  {
+    title: 'El señor de los anilos',
+    director: 'Peter Jackson',
+    vista: true,
+  },
+  {
+    title: 'La liga de la justicia',
+    director: 'Zack Snyder',
+    vista: false,
+  },
+  {
+    title: 'Advengers End Game',
+    director: 'Joe Russo',
+    vista: true,
+  },
+  {
+    title: 'Batman vs Superman',
+    director: 'Zack Snyder',
+    vista: false,
+  },
+];
+
+movies(moviesCollection);
