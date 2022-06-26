@@ -23,21 +23,8 @@ hastaCero(100)  Devuelve:
 TODO: Cómo hacerlo:
 -Función que reciba un número
 -Inicializar variable con encabezado
--bucle del número al cero
+-Bucle del número al cero
 -Concatenar guión, n°, número y salto de línea
--restar 8
--concatenar fin
+-Restar 8
+-Concatenar fin
 */
-
-function hastaCero(num) {
-  let resultado = `--- Del ${num} al 0 --- \n`;
-
-  while (num > 0) {
-    resultado += `-n° ${num} \n`;
-    num -= 8;
-  }
-  resultado += `--- FIN --- \n`;
-  return resultado;
-}
-
-console.log(hastaCero(100));
