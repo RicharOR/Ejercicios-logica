@@ -10,3 +10,13 @@ TODO: Como hacerlo:
 -Filtrar array y evaluar una condición
 -Devolver nuevo array
 */
+
+const array1 = [1, 2, 3, 5, 'hola', 'luis'];
+const array2 = [1, 7, 8, 2, 'hola', 'adios'];
+
+const elementosComunes = (array1, array2) =>{
+    const arrayComun = array1.filter(elemento => array2.includes(elemento));
+    return arrayComun
+}
+
+console.log(elementosComunes(array1,array2));

@@ -10,3 +10,16 @@ TODO: Como hacerlo:
 -Aumentar en uno el contado
 -Devolver contador
 */
+
+function impares(num1, num2) {
+	let contador = 0;
+
+	while (num1 < num2) {
+		if (num1 % 2 != 0) contador++;
+
+		num1++;
+	}
+	return contador;
+}
+
+console.log(impares(7, 700));
