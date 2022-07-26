@@ -6,8 +6,7 @@ primeroYUltimo([100,200,300,780]) Devuelve: [100,780]
 
 const primeroYUltimo = arr => {
   let newArray = []
-  newArray.push(arr.at(0))
-  newArray.push(arr.at(-1))
+  newArray.push(arr.at(0), arr.at(-1))
 
   return newArray
 }
